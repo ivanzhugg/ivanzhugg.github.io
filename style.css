@@ -24,12 +24,13 @@ main {
 	width: 100%;
 	justify-content: center;
 	align-items: center;
-  padding-bottom: 20px;
+	padding-bottom: 20px;
+	background-color: rgb(234, 103, 177);
 }
 
 footer {
 	width: 100%;
-	text-align: center;
+	background-color: chartreuse;
 }
 
 .head__list {
@@ -53,6 +54,9 @@ ul {
 main {
 	justify-content: center;
 	text-align: center;
+	background-color: beige;
+	max-width: 960px;
+	margin: auto;
 }
 
 ol {
@@ -92,4 +96,8 @@ td:nth-child(even) {
 
 a {
 	text-decoration: none;
+}
+
+header {
+	background-color: #7c7c7c;
 }
