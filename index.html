@@ -1,165 +1,215 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Home work 1</title>
+		<link rel="stylesheet" href="style.css" />
+		<title>Home work #1</title>
 	</head>
+
 	<body>
+		<h3>Список гиперссылок</h3>
 		<ul>
-			<li><a href="http://kubsu.ru">Абсолютная гиперссылка на главную страницу сайта kubsu.ru</a></li>
 			<li>
-				<a href="https://kubsu.ru">Абсолютная на главную сайта kubsu.ru в протоколе https</a>
+				<a href="http://kubsu.ru">
+					абсолютная гиперссылку на главную страницу сайта kubsu.ru</a
+				>
 			</li>
+
 			<li>
-				<a href="http://kubsu.ru"
-					><img
+				<a href="https://kubsu.ru">
+					абсолютная на главную сайта kubsu.ru в протоколе https</a
+				>
+			</li>
+
+			<li>
+				<a href="https://kubsu.ru">
+					<img
 						src="image.jpg"
-						alt="картинка не загрузилась"
-						width="250"
-						height="200"
-				/></a>
-        <p>ссылка-изображение</p>
-			</li>
-			<li><a href="/page">Сокращенная ссылка на внутреннюю страницу</a></li>
-			<li><a href="/">Сокращенная ссылка на главную страницу</a></li>
-			<li><a href="#fragment">Ссылка на фрагмент текущей страницы</a></li>
-			<li>
-				<a href="/page?param1=value1&param2=value2&param3=value3"
-					>Ссылка с тремя параметрами в URL</a
-				>
-			</li>
-			<li><a href="/page&id=123">Ссылка с параметром id в URL</a></li>
-			<li>
-				<a href="page.html"
-					>Относительная на страницу в текущем каталоге</a
-				>
-			</li>
-			<li>
-				<a href="about/page.html"
-					>Относительная на страницу в каталоге about</a
-				>
-			</li>
-			<li>
-				<a href="../page.html"
-					>Относительная на страницу в каталоге уровнем выше текущего</a
-				>
-			</li>
-			<li>
-				<a href="../../page.html"
-					>Относительная на страницу в каталоге двумя уровнями выше</a
-				>
-			</li>
-			<li>
-				Контекстная  в тексте абзаца
-				<a href="https://example.com">Перейти на сайт example.com</a>
-			</li>
-			<li>
-				<a href="https://example.com#fragment"
-					>Ссылка на фрагмент страницы другого сайта</a
-				>
-			</li>
-			<li>
-				<map name="area1">
-					<area
-						alt="прямоугольная область с ссылкой"
-						coords="50,50,250,250"
-						href="https://kubsu.ru"
-						shape="rect"
+						alt="КубГУ"
+						width="300"
+						height="300"
 					/>
-					<area
-						alt="круглая область с ссылкой"
-						coords="0,0,100"
-						href="https://ru.wikipedia.org/wiki/Кубанский_государственный_университет"
-						shape="circle"
+				</a>
+			</li>
+
+			<li>
+				<a href="/ru/science"> сокращенная ссылку на внутреннюю страницу</a>
+			</li>
+
+			<li><a href="/index.php"> сокращенную ссылку на главную страницу</a></li>
+
+			<li><a href="#reg">ссылка на фрагмент текущей страницы</a></li>
+
+			<li>
+				<a
+					href="https://kubsu.ru/page?param1=value1&param2=value2&param3=value3"
+					>ссылка с тремя параметрами в URL</a
+				>
+			</li>
+			<li>
+				<a href="https://kubsu.ru/page?id=090303"></a> ссылка с параметром id в
+				URL
+			</li>
+
+			<li>
+				<a href="./schedule"></a>относительная на страницу в текущем каталоге
+			</li>
+
+			<li>
+				<a href="./about/page.html"
+					>относительная на страницу в каталоге about</a
+				>
+			</li>
+
+			<li>
+				<a href="../schedule"
+					>относительная на страницу в каталоге уровнем выше текущего</a
+				>
+			</li>
+
+			<li>
+				<a href="../../schedule"></a> относительная на страницу в каталоге двумя
+				уровнями выше
+			</li>
+
+			<li>
+				<p>
+					<a href="https://kubsu.ru">КубГУ</a> — университет.
+				</p>
+			</li>
+			<li>
+				<a
+					href="https://ru.wikipedia.org/wiki/Кубанский_государственный_университет#История"
+					>ссылка на фрагмент страницы стороннего сайта</a
+				>
+			</li>
+
+			<li></li>
+					<map name="area1">
+						<area
+							alt="Тут была прямоугольная область с ссылкой"
+							coords="50,50,250,250"
+							href="https://kubsu.ru"
+							shape="rect"
+						/>
+						<area
+							alt="Тут была круглая область с ссылкой"
+							coords="0,0,100"
+							href="https://ru.wikipedia.org/wiki/Кубанский_государственный_университет"
+							shape="circle"
+						/>
+					</map>
+
+					<img
+						alt=""
+						height="300"
+						src="image.jpg"
+						usemap="#area1"
+						width="300"
 					/>
-				</map>
+					<br />Слева вверху - wikipedia, центр - официальный сайт
+				</li>
 
-				<img alt="" height="300" src="image.jpg" usemap="#area1" width="300" />
-				<br />Слева вверху - wikipedia, центр - официальный сайт
-			</li>
-			<li><a href="#">Ссылка с пустым href</a></li>
+			<li><a href="#"> ссылка с пустым href</a></li>
 
-			<li><a>Ссылка без href</a></li>
+			<li><a onclick="surprise();" tabindex="0">Ссылка без href</a></li>
+
 			<li>
-				<a rel="nofollow" href="https://exapmle.com"
-					>Ссылка по которой запрещен переход поисковикам</a
+				<a href="https://kubsu.ru" rel="nofollow"
+					>ссылка, по которой запрещен переход поисковикам</a
 				>
 			</li>
+
+			<noindex
+				><li>
+					<a href="https://kubsu.ru">запрещенная для индексации поисковиками</a>
+				</li></noindex
+			>
+
 			<li>
-				<a rel="noindex" href="https://example.com"
-					>Запрещенная для индексации поисковиками ссылка</a
-				>
-			</li>
-			<li>
+				<p>нумерованный список ссылок</p>
 				<ol>
-					<li><a href="http://example.com" title="cсылка 1">Ссылка 1</a></li>
-					<li><a href="http://example.com" title="cсылка 2">Ссылка 2</a></li>
-					<li><a href="http://example.com" title="cсылка 3">Ссылка 3</a></li>
+					<li>
+						<a href="http://kubsu.ru" title="Главная страница КубГУ"> КубГУ</a>
+					</li>
+					<li>
+						<a
+							href="https://www.kubsu.ru/ru/education"
+							title="КубГУ/Образование"
+						>
+							КубГУ Образование</a
+						>
+					</li>
+					<li>
+						<a href="https://www.kubsu.ru/ru/science" title="КубГУ/Наука">
+							КубГУ Наука</a
+						>
+					</li>
 				</ol>
 			</li>
+
 			<li>
-				<a href="ftp://username:password@ftp.example.com/file.txt"
-					>Ссылка на файл на сервере FTP с авторизацией</a
+				<a href="ftp://user:pass123@adress.ru/Temp/file.txt"
+					>ссылка на файл на сервере FTP с авторизацией</a
 				>
 			</li>
 		</ul>
-		<h2>Форма</h2>
-		<form action="/submit" method="post">
-			<label for="full-name">ФИО:</label><br />
-			<input type="text" id="full-name" name="FIO" required /><br />
 
-			<label for="phone">Телефон: </label><br />
-			<input type="tel" id="phone" name="phone" required /><br />
+		<div id="reg"><h3>Форма</h3></div>
 
-			<label for="email">Почта: </label><br />
-			<input type="email" id="email" name="email" required /><br />
+		<form>
+			ФИО<br />
+			<input name="text" /><br />
+		</form>
 
-			<label for="birthdate">Дата рождения:</label><br />
-			<input type="date" id="birthdate" name="birthday" required /><br />
+		<form>
+			Номер телефона<br />
+			<input type="tel" value="+7" /><br />
+		</form>
 
-      <p>Пол:</p>
-        <input type="radio" id="male" name="gender" value="male">
-        <label for="male"> Мужской </label><br>
-        <input type="radio" id="female" name="gender" value="female">
-        <label for="female"> Женский </label><br><br>
-        
-        <label for="programming-language">Выберите любимые языки программирования:</label><br>
-        <input type="checkbox" name = "lang1" value = "Pascal">
-        <label for="lang1"> Pascal </label>
-        <input type="checkbox" name = "lang2" value = "C">
-        <label for="lang2"> С </label>
-        <input type="checkbox" name = "lang3" value = "C++">
-        <label for="lang3"> С++ </label>
-        <input type="checkbox" name = "lang4" value = "JavaScript">
-        <label for="lang4"> JavaScript </label>
-        <input type="checkbox" name = "lang5" value = "PHP">
-        <label for="lang5"> PHP </label>
-        <input type="checkbox" name = "lang6" value = "Python">
-        <label for="lang6"> Python </label>
-        <input type="checkbox" name = "lang7" value = "Java">
-        <label for="lang7"> Java </label>
-        <input type="checkbox" name = "lang8" value = "Haskel">
-        <label for="lang8"> Haskel </label>
-        <input type="checkbox" name = "lang10" value = "Clojure">
-        <label for="lang9"> Clojure </label>
-        <input type="checkbox" name = "lang11" value = "Prolog">
-        <label for="lang10"> Prolog </label>
-        <input type="checkbox" name = "lang12" value = "Scala">
-        <label for="lang11"> Scala </label><br><br>
-        
+		<form>
+			Адрес электронной почты<br />
+			<input type="email" value="@gmail.com" /><br />
+		</form>
 
-        <label for="biography">Биография: </label><br>
-        <textarea id="biography" name="biography" rows="5" cols="70"></textarea><br>
+		<form>
+			Дата рождения<br />
+			<input type="date" /><br />
+		</form>
 
-        <input type="checkbox" id="contract" name="contract" required>
-        <label for="contract">С контрактом ознакомлен(а) </label><br>
+		<form>
+			Пол<br />
+			<input type="radio" name="gender" value="man" /> Мужской <br />
+			<input type="radio" name="gender" value="woman" /> Женский <br />
+		</form>
 
-        <button type="submit">Сохранить</button>
-    </form>
-        
-</body>
-</html>
+		<form>
+			Любимый язык программирования<br />
+			<select name="lang" [] size="5" multiple>
+				<option value="1">Pascal</option>
+				<option value="2">C</option>
+				<option value="3" selected>C++</option>
+				<option value="4">Java Script</option>
+				<option value="5">PHP</option>
+				<option value="6">Python</option>
+				<option value="7">Java</option>
+				<option value="8">Haskel</option>
+				<option value="9">Clojure</option>
+				<option value="10">Prolog</option>
+				<option value="11">Scala</option>
+			</select>
+		</form>
+
+		<form>
+			Биография<br />
+			<textarea id="story" name="story"></textarea>
+		</form>
+
+		<form><input type="checkbox" /> С контрактом ознакомлен(а) <br /></form>
+
+		<form name="form" method="post" action="index.html">
+			<button type="submit">Отправить</button>
 		</form>
 	</body>
 </html>
